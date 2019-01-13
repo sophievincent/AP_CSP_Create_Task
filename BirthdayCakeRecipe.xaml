@@ -1,0 +1,16 @@
+﻿<Window x:Class="CreateTaskFinalProject.BirthdayCakeRecipe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateTaskFinalProject"
+        mc:Ignorable="d"
+        Title="BirthdayCakeRecipe" Height="400" Width="600">
+    <Grid>
+        <Canvas x:Name="canRecipe">
+            <TextBlock x:Name="txtTitle" Canvas.Left="10" TextWrapping="Wrap" Text="" Canvas.Top="10" Height="349" Width="194" FontFamily="LetterOMatic!" FontSize="42" VerticalAlignment="Stretch" HorizontalAlignment="Left"/>
+            <TextBlock x:Name="txtRecipe" Canvas.Left="220" TextWrapping="Wrap" Text="" Canvas.Top="10" Height="349" Width="362" FontFamily="LetterOMatic!" HorizontalAlignment="Left"/>
+        </Canvas>
+
+    </Grid>
+</Window>

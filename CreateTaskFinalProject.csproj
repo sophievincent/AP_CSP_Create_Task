@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1F77341-63FF-471B-B644-106F67B20B68}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateTaskFinalProject</RootNamespace>
+    <AssemblyName>CreateTaskFinalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ApplePie.xaml.cs">
+      <DependentUpon>ApplePie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ApplePieRecipe.xaml.cs">
+      <DependentUpon>ApplePieRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BCCupCake.xaml.cs">
+      <DependentUpon>BCCupCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BCCupCakeRecipe.xaml.cs">
+      <DependentUpon>BCCupCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BirthdayCake.xaml.cs">
+      <DependentUpon>BirthdayCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BirthdayCakeRecipe.xaml.cs">
+      <DependentUpon>BirthdayCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CCChipCookies.xaml.cs">
+      <DependentUpon>CCChipCookies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CCChipCookiesRecipe.xaml.cs">
+      <DependentUpon>CCChipCookiesRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CCupCake.xaml.cs">
+      <DependentUpon>CCupCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CCupCakeRecipe.xaml.cs">
+      <DependentUpon>CCupCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CherryPie.xaml.cs">
+      <DependentUpon>CherryPie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CherryPieRecipe.xaml.cs">
+      <DependentUpon>CherryPieRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolateChipCookies.xaml.cs">
+      <DependentUpon>ChocolateChipCookies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolateChipCookiesRecipe.xaml.cs">
+      <DependentUpon>ChocolateChipCookiesRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolatePie.xaml.cs">
+      <DependentUpon>ChocolatePie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChocolatePieRecipe.xaml.cs">
+      <DependentUpon>ChocolatePieRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IceCreamPie.xaml.cs">
+      <DependentUpon>IceCreamPie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IceCreamPieRecipe.xaml.cs">
+      <DependentUpon>IceCreamPieRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RVCake.xaml.cs">
+      <DependentUpon>RVCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RVCakeRecipe.xaml.cs">
+      <DependentUpon>RVCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RVCupCake.xaml.cs">
+      <DependentUpon>RVCupCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RVCupCakeRecipe.xaml.cs">
+      <DependentUpon>RVCupCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Snickerdoodle.xaml.cs">
+      <DependentUpon>Snickerdoodle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SnickerdoodleRecipe.xaml.cs">
+      <DependentUpon>SnickerdoodleRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SugarCookies.xaml.cs">
+      <DependentUpon>SugarCookies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SugarCookiesRecipe.xaml.cs">
+      <DependentUpon>SugarCookiesRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VanillaCake.xaml.cs">
+      <DependentUpon>VanillaCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VCakeRecipe.xaml.cs">
+      <DependentUpon>VCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VCupCake.xaml.cs">
+      <DependentUpon>VCupCake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VCupCakeRecipe.xaml.cs">
+      <DependentUpon>VCupCakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ApplePie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ApplePieRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Baking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BCCupCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BCCupCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BirthdayCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BirthdayCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CCChipCookies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CCChipCookiesRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CCupCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CCupCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CherryPie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CherryPieRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChocolateChipCookies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChocolateChipCookiesRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChocolatePie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChocolatePieRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IceCreamPie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IceCreamPieRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Information.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Baking.xaml.cs">
+      <DependentUpon>Baking.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cake.xaml.cs">
+      <DependentUpon>Cake.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CakeRecipe.xaml.cs">
+      <DependentUpon>CakeRecipe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExtensionsForBitmapImages.cs" />
+    <Compile Include="Information.xaml.cs">
+      <DependentUpon>Information.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RVCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RVCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RVCupCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RVCupCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Snickerdoodle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SnickerdoodleRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SugarCookies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SugarCookiesRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VanillaCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VCupCake.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VCupCakeRecipe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BakingPowder.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Butter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chocolate.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cocoa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eggs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodColoring.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Milk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oil.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSugar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sugar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vanilla.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hand8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CupcakePan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmptyBowl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block7.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block8.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TitleBlock.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Block10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kitchen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KitchenBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlockSelect.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecipeBook.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock70.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock75.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sprinkles.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Done.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApplePie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthdayCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BirthdayCupCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CCChipCookies.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CherryPie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolateCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolateChipCookies.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolateCupCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ChocolatePie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IceCreamPie.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RVCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RVCupCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SDCookies.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SugarCookies.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VanillaCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VanillaCupCake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apples.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BSugar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CChips.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cherries.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinnamon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CornStarch.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IceCream1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oreos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,21 @@
+﻿<Window x:Class="CreateTaskFinalProject.Baking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateTaskFinalProject"
+        mc:Ignorable="d"
+        Title="Baking" Height="710" Width="1312.5">
+    <Grid>
+        <Canvas x:Name="canBaking">
+            <TextBlock x:Name="txtInstructions" Canvas.Left="10" TextWrapping="Wrap" Text="" Canvas.Top="10" Height="79" Width="1284"/>
+            <Grid x:Name="grdMainGrid" Height="418" Canvas.Left="180" Canvas.Top="141" Width="948"/>
+            <Grid x:Name="grdCakeGrid" Height="418" Canvas.Left="180" Canvas.Top="141" Width="948"/>
+            <Grid x:Name="grdCupCakeGrid" Height="418" Canvas.Left="180" Canvas.Top="141" Width="948"/>
+            <Grid x:Name="grdCookiesGrid" Height="418" Canvas.Left="180" Canvas.Top="141" Width="948"/>
+            <Grid x:Name="grdPieGrid" Height="418" Canvas.Left="180" Canvas.Top="141" Width="948"/>
+            <Button x:Name="btnNext" Content="" Canvas.Left="1080" Canvas.Top="573" Width="204" Height="86" Click="ClickedNext" BorderThickness="0"/>
+
+        </Canvas>
+    </Grid>
+</Window>

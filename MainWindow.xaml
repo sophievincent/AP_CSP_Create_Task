@@ -1,0 +1,18 @@
+﻿<Window x:Class="CreateTaskFinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateTaskFinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="710" Width="1312.5">
+    <Grid>
+        <Canvas x:Name="canMainScreen">
+            <Button x:Name="btnBegin" Content="Let's Get Baking!" Canvas.Left="252" Width="821" Canvas.Top="240" Height="118" FontSize="72" FontFamily="LetterOMatic!" BorderThickness="0" Click="BeginGame_Click">
+            </Button>
+            <Button x:Name="btnInfo" Content="i" Canvas.Left="1180" Canvas.Top="585" Width="69" Height="69" IsCancel="True" FontSize="48" FontFamily="Whimsy TT" BorderThickness="0" Click="Info_Click">
+            </Button>
+
+        </Canvas>
+    </Grid>
+</Window>

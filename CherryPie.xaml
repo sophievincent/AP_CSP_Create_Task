@@ -1,0 +1,47 @@
+﻿<Window x:Class="CreateTaskFinalProject.CherryPie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CreateTaskFinalProject"
+        mc:Ignorable="d"
+        Title="CherryPie" Height="710" Width="1312.5">
+    <Grid>
+        <Canvas x:Name="canCherryPie">
+            <Image x:Name="imgBowl" HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="500" Canvas.Left="420" Canvas.Top="249"/>
+
+            <Image x:Name="imgIngredient1" HorizontalAlignment="Center" Height="134" VerticalAlignment="Top" Width="132" Canvas.Left="283" Canvas.Top="497"/>
+            <TextBlock x:Name="txtCount1" Canvas.Left="283" TextWrapping="Wrap" Text="0" Canvas.Top="447" Height="45" Width="77" FontFamily="LetterOMatic!" FontSize="22" TextAlignment="Center"/>
+            <Button x:Name="btnAdd1" Content="Add In" Canvas.Left="365" Canvas.Top="447" Width="50" Height="45" FontFamily="LetterOMatic!" BorderThickness="0" Click="AddIn_Sugar"/>
+            <Button x:Name="btnPlus1" Content="+" Canvas.Left="283" Canvas.Top="636" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Add_Sugar"/>
+            <Button x:Name="btnSubtract1" Content="-" Canvas.Left="349" Canvas.Top="636" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Remove_Sugar"/>
+
+            <Image x:Name="imgIngredient2" HorizontalAlignment="Center" Height="134" VerticalAlignment="Top" Width="132" Canvas.Left="283" Canvas.Top="244"/>
+            <TextBlock x:Name="txtCount2" Canvas.Left="283" TextWrapping="Wrap" Text="0" Canvas.Top="194" Height="45" Width="77" FontFamily="LetterOMatic!" FontSize="22" TextAlignment="Center"/>
+            <Button x:Name="btnAdd2" Content="Add In" Canvas.Left="365" Canvas.Top="194" Width="50" Height="45" FontFamily="LetterOMatic!" BorderThickness="0" Click="AddIn_CornStarch"/>
+            <Button x:Name="btnPlus2" Content="+" Canvas.Left="283" Canvas.Top="383" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Add_CornStarch"/>
+            <Button x:Name="btnSubtract2" Content="-" Canvas.Left="349" Canvas.Top="383" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Remove_CornStarch"/>
+
+            <Image x:Name="imgIngredient3" HorizontalAlignment="Center" Height="134" VerticalAlignment="Top" Width="132" Canvas.Left="928" Canvas.Top="497"/>
+            <TextBlock x:Name="txtCount3" Canvas.Left="928" TextWrapping="Wrap" Text="0" Canvas.Top="447" Height="45" Width="77" FontFamily="LetterOMatic!" FontSize="22" TextAlignment="Center"/>
+            <Button x:Name="btnAdd3" Content="Add In" Canvas.Left="1010" Canvas.Top="447" Width="50" Height="45" FontFamily="LetterOMatic!" BorderThickness="0" Click="AddIn_Cherries"/>
+            <Button x:Name="btnPlus3" Content="+" Canvas.Left="928" Canvas.Top="636" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Add_Cherries"/>
+            <Button x:Name="btnSubtract3" Content="-" Canvas.Left="994" Canvas.Top="636" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Remove_Cherries"/>
+
+            <Image x:Name="imgIngredient8" HorizontalAlignment="Center" Height="134" VerticalAlignment="Top" Width="132" Canvas.Left="928" Canvas.Top="244"/>
+            <TextBlock x:Name="txtCount8" Canvas.Left="928" TextWrapping="Wrap" Text="0" Canvas.Top="194" Height="45" Width="77" FontFamily="LetterOMatic!" FontSize="22" TextAlignment="Center"/>
+            <Button x:Name="btnAdd8" Content="Add In" Canvas.Left="1010" Canvas.Top="194" Width="50" Height="45" FontFamily="LetterOMatic!" BorderThickness="0" Click="AddIn_Vanilla"/>
+            <Button x:Name="btnPlus8" Content="+" Canvas.Left="928" Canvas.Top="383" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Add_Vanilla"/>
+            <Button x:Name="btnSubtract8" Content="-" Canvas.Left="994" Canvas.Top="383" Width="66" Height="37" FontFamily="LetterOMatic!" BorderThickness="0" Click="Remove_Vanilla"/>
+
+            <Button x:Name="btnRecipe" Content="" Canvas.Left="1186" Canvas.Top="10" Width="108" Height="66" BorderThickness="0" Click="OpenRecipe"/>
+            <TextBlock x:Name="txtInstructions" Canvas.Left="10" TextWrapping="Wrap" Text="" Canvas.Top="10" Height="160" Width="555" FontFamily="LetterOMatic!" FontSize="16"/>
+            <Button x:Name="btnMix" Content="Button" Canvas.Left="475" Canvas.Top="590" Width="392" Height="75" BorderThickness="0" Click="ClickedMixed"/>
+            <Button x:Name="btnNext" Content="Next" Canvas.Left="1046" Canvas.Top="10" Width="135" Height="66" BorderThickness="0" FontFamily="LetterOMatic!" Click="NextEvent"/>
+
+        </Canvas>
+
+
+
+    </Grid>
+</Window>
